@@ -1,0 +1,26 @@
+
+###########################
+# Configure these variables
+
+PATH=$PATH:$FSLDIR/bin:/usr/local/mricron
+HOME_DIR="/home/share"
+
+export EXEC_DIR="/usr/local/scripts"
+export MEDI_TOOLBOX_PATH="$HOME_DIR/CornellQSM/MEDI_toolbox"
+export RESHARP_PATH="$HOME_DIR/CornellQSM/BackgroundRemoval/RESHARP"
+export MATLAB_FSL_PATH="/usr/local/fsl/etc/matlab"
+export REF_POINTS="$HOME_DIR/aux_data/CST_points_left.nii.gz"
+export MNI="${FSLDIR}/data/standard/MNI152_T1_1mm.nii.gz"
+export MNI_BRAIN="${FSLDIR}/data/standard/MNI152_T1_1mm_brain.nii.gz"
+export MNI_BRAIN_MASK_DIL="${FSLDIR}/data/standard/MNI152_T1_1mm_brain_mask_dil.nii.gz"
+export STRUCTURES="L_Accu,R_Accu,L_Amyg,R_Amyg,L_Caud,R_Caud,L_Hipp,R_Hipp,L_Pall,R_Pall,L_Puta,R_Puta,L_Thal,R_Thal,BrStem"
+export FS_LABELS=`cat $HOME_DIR/aux_data/FS_LABELS.txt`
+#export FS_ANALYSIS_DIR="$HOME_DIR/IRON/recon"
+
+export MAX_THREADS=8
+
+export ME_DATA_SUBDIR="iron"
+export ME_SORTED_DATA_SUBDIR="IRON_proc"
+
+############################
+
